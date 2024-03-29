@@ -1,40 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: "Madimi One", sans-serif; */
+    
 }
 
 .contact{
+    cursor: pointer;
     width: 100%;
     min-height: 110vh;
     background-color: #a399b2;
 background-image: linear-gradient(147deg, #645678 0%, #4d4855 74%);
-
-
-
 }
 
 
-/* serach bar */
-form{
+/* * * * * * SEARCH * * * * *  */
+
+.search-area form{
     position: relative;
     top: 50%;
-    left: 13%;
+    left: 10%;
     transform: translate(-40%,20%);
     transition: all 1s;
     width: 50px;
     height: 50px;
-    background: rgb(228, 197, 197);
+    background: white;
     box-sizing: border-box;
     border-radius: 25px;
-    border: 4px solid rgb(219, 195, 195);
+    border: 4px solid white;
     padding: 5px;
 }
 
-input{
+.search-area input{
     position: absolute;
     top: 0;
     left: 0;
@@ -50,8 +50,6 @@ input{
 }
 
 
-
-
 .fa{
     box-sizing: border-box;
     padding: 10px;
@@ -61,59 +59,56 @@ input{
     top: 0;
     right: 0;
     border-radius: 50%;
-    color: rgb(165, 77, 77);
+    color: black;
     text-align: center;
     font-size: 1.2em;
     transition: all 1s;
 }
 
-form:hover{
+.search-area form:hover{
     width: 300px;
     cursor: pointer;
 }
 
-form:hover input{
+.search-area form:hover input{
     display: block;
 }
 
-form:hover .fa{
+.search-area form:hover .fa{
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 
-    color: rgb(12, 12, 12);
+    color: white;
 }
 
 
-/* add button */
+/* * * * *  ADD BTN * * * * */
 .add-symbol{
     position: absolute;
     left: 360px;
-    top: 15px;
-    font-size: 30px;
-    color:  #100f10;
-
-
+    top: 10px;
+    font-size: 40px;
+    color:  #302379;
 
 }
-/* whatsapp */
+
+/* LIST-LEFT */
 
 
-.whatsappSpaceArea{
+.LISTSpaceArea{
     margin-top: 20px;
     margin-left: 10px;
         
 }
 
-.whatsappSpaceArea::-webkit-scrollbar {
-    /* Hide the scrollbar for WebKit browsers (Chrome, Safari, Opera) */
+ .LISTSpaceArea::-webkit-scrollbar {  /*HIDE BAR */ 
+    
     display: none;
 }
 
-.whatsappSpaceArea {
+.LISTSpaceArea {
     /* Remove the border property */
     border: none;
 }
-
-
 
 .my-contact{
     display: flex;
@@ -129,14 +124,13 @@ form:hover .fa{
     transition: all 0.5s;
 }
 
-
 .text .full-name{
-color: white;
-font-size: 18px;
-font-family: "Madimi One", sans-serif;
-width: 130px;
-overflow: hidden;
-text-wrap:nowrap;
+   color: white;
+   font-size: 18px;
+   font-family: "Madimi One", sans-serif;
+   width: 130px;
+   overflow: hidden;
+   text-wrap:nowrap;
 }
 
 .text .simple-message{
@@ -152,12 +146,12 @@ text-wrap:nowrap;
 
 .my-contact .message-time {
 color: white;
-font-family: "Inter", sans-serif;
+font-family: "Madimi One", sans-serif;
 width: fit-content;
 float: right;
 position: relative;
-left: 30px;
-top: -5px;
+left: 40px;
+top: 10px;
 font-size: 12px;
 }
 
@@ -178,10 +172,10 @@ font-size: 12px;
 
 
 
+/* Affichage right */
 
-/* display area */
-.display-area{
-    /* float: right; */
+.Big-Profil{
+    
     position: relative;
     top: -384px;
     left: 390px;
@@ -192,6 +186,7 @@ font-size: 12px;
     border-radius: 50px 20px;
     margin-right: 20px;
     margin-left: 20px;
+    cursor: pointer;
 
 }
 
@@ -290,11 +285,8 @@ body{
 }
 
 .icon{
-    width: 80%;
-    
-
+    width: 80%;  
 }
-
 
 
 .tele, .email{
@@ -303,11 +295,12 @@ body{
     transition: transform 0.3s;
 }
 
+
 .tele:hover, .email:hover {
     color: rgb(127, 16, 211); /* Par exemple, changer la couleur en rouge */
     cursor: pointer; 
     transform: scale(0.8);/* Changer le curseur de la souris en main */
-  }
+}
 
 .tele p, .email p{
     font-size: 12px;
@@ -320,6 +313,92 @@ body{
     align-items: center;
     margin-top: 25px;
 }
+
+
+
+/* * * * * * * ADD * * * * * * */
+
+
+.blue-win{
+ display: none; 
+    margin-top: 50px;
+    background-color: #182b3a;
+    background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+    border-radius: 50px 20px;
+    width: 80%;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.camera-symbol{
+    font-size: 30px;
+
+}
+
+.circle{
+    background-color: #b1ebea;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-feild{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#imageUpload{
+    margin-left: 10px;
+    position: relative;
+    top: 15px;
+}
+
+form{
+    text-align: center;
+}
+
+.full-name-input input,
+.Job-input input,
+.email-input input,
+.address-input textarea{
+
+  font-family: "Madimi One", sans-serif;
+  border: #D9D9D9 solid 1px;
+  margin-top: 15px;
+  width: 280px;
+  height: 60px;
+  border-radius: 20px;
+  
+}
+
+.div-button input{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #335c81 74%);    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    transition: all 1s;
+    font-family: "Madimi One", sans-serif;
+}
+
+.div-button input:hover{
+    color: black;
+    font-size: 20px;
+    background-color: #f2dd6e;
+    background-image: linear-gradient(319deg, #f2dd6e 0%, #cff27e 37%, #ef959d 100%);
+    }
+
 
 
 

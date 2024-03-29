@@ -1,2 +1,0 @@
-# y-contact
-L'objectif de cette application est de permettre aux utilisateurs de visualiser leurs contacts à partir d'une API externe contenant les utilisateurs existants. De plus, l'application doit permettre aux utilisateurs d'ajouter de nouveaux contacts en les enregistrant localement dans le stockage local du navigateur. Elle devrait également offrir des fonctionnalités de recherche et de filtrage pour faciliter la gestion des contacts.
